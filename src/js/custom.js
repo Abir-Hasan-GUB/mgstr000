@@ -54,3 +54,19 @@ $('.slider-nav').on('click', '.slick-slide', function (event) {
 
     $('.slider-single').slick('slickGoTo', goToSingleSlide);
 });
+
+
+const menu = $('.menu')
+const navDivDoHideAndShow = $('.controllSliderNav')
+
+let count = 1
+menu.click(function () {
+    navDivDoHideAndShow.slideToggle("slow");
+    if (count % 2 === 0) {
+        menu.attr("src", "../images/menu.png")
+        count += 1;
+    } else if (count % 2 === 1) {
+        menu.attr("src", "../images/close.png")
+        count += 1;
+    }
+});

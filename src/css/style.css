@@ -92,24 +92,40 @@ body p {
 }
 
 #mainPartController .leftNavigation .sign {
-  padding-left: 3rem;
+  padding-left: 1.5rem;
 }
 
-#mainPartController .leftNavigation .sign1 {
-  padding-left: 10rem;
-}
-
-#mainPartController .leftNavigation .sign3 {
-  padding-left: 2rem;
-}
-
-#mainPartController .leftNavigation .sign5 {
-  padding-left: 3.8rem;
+#mainPartController .leftNavigation .menuBarCtrl img {
+  cursor: pointer;
 }
 
 #mainPartController .leftNavigation .slick-slide.is-active h3 {
   color: #616161;
   background-color: transparent;
+}
+
+#mainPartController .leftNavigation .menuBarCtrl {
+  display: none;
+}
+
+#mainPartController .leftNavigation .controllSliderNav .item1 {
+  padding-left: 16rem;
+}
+
+#mainPartController .leftNavigation .controllSliderNav .item2 {
+  padding-left: 8.8rem;
+}
+
+#mainPartController .leftNavigation .controllSliderNav .item3 {
+  padding-left: 8rem;
+}
+
+#mainPartController .leftNavigation .controllSliderNav .item4 {
+  padding-left: 8.9rem;
+}
+
+#mainPartController .leftNavigation .controllSliderNav .item5 {
+  padding-left: 9.8rem;
 }
 
 #mainPartController .colorHide {
@@ -127,14 +143,14 @@ body p {
 
 #mainPartController .fullContentArea .sliderOne {
   background: url(../images/MXRGTR.gif);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
 
 #mainPartController .fullContentArea .sliderTwo {
   background: url(../images/Morgan.gif);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   position: relative;
 }
@@ -186,7 +202,7 @@ body p {
 
 #mainPartController .fullContentArea .slideFive {
   background-color: #000;
-  background-image: url(../images/representation.png);
+  background-image: url(../images/representation.gif);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -200,9 +216,20 @@ body p {
   text-decoration: underline;
 }
 
+.expand {
+  content: url(../images/close.png);
+}
+
+.collapse {
+  content: url(../images/menu.png);
+}
+
 @media screen and (max-width: 760px) {
   #mainPartController .container {
     padding: 0rem 0;
+  }
+  .menuBarCtrl {
+    display: block !important;
   }
   .fullContentArea {
     margin-top: 2rem;
@@ -222,8 +249,84 @@ body p {
   }
   #mainPartController .fullContentArea .bigSLiderHeight {
     overflow: scroll;
+    height: 30rem;
   }
   #mainPartController .fullContentArea .sliderFour .superRare {
     max-width: 11rem;
+  }
+  #mainPartController .leftNavigation .controllSliderNav .item1 {
+    padding-left: 7.5rem;
+  }
+  #mainPartController .leftNavigation .controllSliderNav .item2 {
+    padding-left: 0.5rem;
+  }
+  #mainPartController .leftNavigation .controllSliderNav .item3 {
+    padding-left: 0;
+  }
+  #mainPartController .leftNavigation .controllSliderNav .item4 {
+    padding-left: 1rem;
+  }
+  #mainPartController .leftNavigation .controllSliderNav .item5 {
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (min-width: 761px) and (max-width: 991px) {
+  #mainPartController .leftNavigation .slider-nav h3 span {
+    position: absolute;
+    top: 50%;
+    left: -11%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+  }
+  #mainPartController .fullContentArea .sliderFour .superRare {
+    max-width: 10rem;
+  }
+  #mainPartController .fullContentArea .bigSLiderHeight {
+    overflow: scroll;
+    height: 40rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #mainPartController .leftNavigation .slider-nav h3 span {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+  }
+  #mainPartController .fullContentArea .sliderFour .superRare {
+    max-width: 10rem;
+  }
+  #mainPartController .fullContentArea .bigSLiderHeight {
+    overflow: scroll;
+    height: 40rem;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1399px) {
+  #mainPartController .leftNavigation .slider-nav h3 span {
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    transform: translate(0, -50%);
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+  }
+  #mainPartController .fullContentArea .sliderFour .superRare {
+    max-width: 15rem;
+  }
+  #mainPartController .fullContentArea .bigSLiderHeight {
+    overflow: scroll;
+    height: 50rem;
   }
 }
