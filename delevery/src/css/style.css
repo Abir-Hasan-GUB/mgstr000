@@ -1,0 +1,229 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Syne Mono", monospace;
+}
+body p {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+#mainPartController .container {
+  padding: 9rem 0;
+}
+
+#mainPartController .js .slider-single > div:nth-child(1n + 2) {
+  display: none;
+}
+
+#mainPartController
+  .js
+  .slider-single.slick-initialized
+  > div:nth-child(1n + 2) {
+  display: block;
+}
+
+#mainPartController h3 {
+  background: #f0f0f0;
+  color: #3498db;
+  font-size: 2.25rem;
+  margin: 0;
+  padding: 1%;
+  position: relative;
+  text-align: center;
+}
+
+#mainPartController .slider-single h3 {
+  line-height: 10rem;
+}
+
+#mainPartController .slider-nav h3::before {
+  content: "";
+  display: block;
+  padding-top: 75%;
+}
+
+#mainPartController .slider-nav h3 span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#mainPartController .slider-nav .slick-slide {
+  cursor: pointer;
+}
+
+#mainPartController .slick-slide.is-active h3 {
+  color: #c00;
+  background-color: #fff;
+}
+
+#mainPartController .leftNavigation .slider-nav .slick-slide {
+  width: 100% !important;
+  height: auto !important;
+}
+
+#mainPartController .leftNavigation .slider-nav h3::before {
+  content: "";
+  display: block;
+  padding-top: 10%;
+}
+
+#mainPartController .leftNavigation h3 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #dbdbdb;
+  background: none;
+  text-align: right;
+}
+
+#mainPartController .leftNavigation .slider-nav h3 span {
+  position: absolute;
+  top: 50%;
+  left: 37%;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+}
+
+#mainPartController .leftNavigation .sign {
+  padding-left: 3rem;
+}
+
+#mainPartController .leftNavigation .sign1 {
+  padding-left: 10rem;
+}
+
+#mainPartController .leftNavigation .sign3 {
+  padding-left: 2rem;
+}
+
+#mainPartController .leftNavigation .sign5 {
+  padding-left: 3.8rem;
+}
+
+#mainPartController .leftNavigation .slick-slide.is-active h3 {
+  color: #616161;
+  background-color: transparent;
+}
+
+#mainPartController .colorHide {
+  color: #bdff19;
+}
+
+#mainPartController .fullContentArea .bigSLiderHeight {
+  background: red;
+  height: 62rem;
+}
+
+#mainPartController .fullContentArea .sliderText {
+  padding: 0 4rem;
+}
+
+#mainPartController .fullContentArea .sliderOne {
+  background: url(../images/MXRGTR.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#mainPartController .fullContentArea .sliderTwo {
+  background: url(../images/Morgan.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#mainPartController .fullContentArea .sliderTwo .blackBox {
+  position: absolute;
+  height: 7rem;
+  width: 15rem;
+  background: #000;
+  left: 30%;
+  top: 40%;
+  transform: translate(-35%, -30%);
+  -webkit-transform: translate(-35%, -30%);
+  -moz-transform: translate(-35%, -30%);
+  -ms-transform: translate(-35%, -30%);
+  -o-transform: translate(-35%, -30%);
+}
+#mainPartController .fullContentArea .sliderTwo .blackBox img {
+  max-width: 4rem;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+#mainPartController .fullContentArea .sliderThree {
+  background-color: #f7f7f7;
+  background-image: url(../images/biograpySign.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top right;
+  position: relative;
+}
+#mainPartController .fullContentArea .sliderThree .sliderText {
+  color: #616161;
+}
+#mainPartController .fullContentArea .sliderThree .sliderText .colorHide {
+  color: #56ffd4;
+}
+
+#mainPartController .fullContentArea .sliderFour {
+  background: url(../images/NFT-Collection.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#mainPartController .fullContentArea .sliderFour .superRare {
+  position: absolute;
+  top: 6rem;
+  left: 1rem;
+}
+
+#mainPartController .fullContentArea .slideFive {
+  background-color: #000;
+  background-image: url(../images/representation.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#mainPartController .fullContentArea .slideFive .direct a {
+  color: #fff;
+}
+#mainPartController .fullContentArea .slideFive .direct .address {
+  word-spacing: 5px;
+  letter-spacing: 10px;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 760px) {
+  #mainPartController .container {
+    padding: 0rem 0;
+  }
+  .fullContentArea {
+    margin-top: 2rem;
+  }
+  #mainPartController .leftNavigation .slider-nav h3 span {
+    position: static;
+  }
+  #mainPartController .leftNavigation h3 {
+    text-align: center;
+  }
+  #mainPartController .leftNavigation .slider-nav h3::before {
+    padding-top: 0;
+  }
+  #mainPartController .leftNavigation .slider-nav .slick-slide {
+    width: 100% !important;
+    height: auto !important;
+  }
+  #mainPartController .fullContentArea .bigSLiderHeight {
+    overflow: scroll;
+  }
+  #mainPartController .fullContentArea .sliderFour .superRare {
+    max-width: 11rem;
+  }
+}
